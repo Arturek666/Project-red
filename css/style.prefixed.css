@@ -72,7 +72,6 @@ li .activate {
 }
 
 .pink-line {
-  padding-top: 35px;
   font-size: 22px;
   font-family: "Lato";
   color: white;
@@ -113,6 +112,12 @@ li .activate {
   border: none;
 }
 
+.btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+}
+
 .pink-bar {
   background-image: url("../images/Pink-bar.png");
   width: 100%;
@@ -120,6 +125,7 @@ li .activate {
   margin: 0;
   line-height: 0;
   background-repeat: no-repeat;
+  background-color: #f4f4f4;
 }
 
 .title-section {
@@ -128,10 +134,97 @@ li .activate {
   color: #5a5a5a;
   font-style: italic;
   line-height: 1.368;
+  text-align: center;
 }
 
-.flex-container {
+.title-section1 {
+  font-size: 38px;
+  font-family: "Lato";
+  color: #5a5a5a;
+  font-style: italic;
+  line-height: 1.368;
+  text-align: left;
+}
+
+.row {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-left: 220px;
+}
+
+.mac img {
+  margin-left: 100px;
+}
+
+.psd-ad {
+  background-color: #f4f4f4;
+  height: 510px;
+}
+
+.psd-ad-height {
+  height: 600px;
+}
+
+.p-flex-about .pink-line {
+  text-align: left;
+}
+
+.pink-line1 {
+  font-size: 15px;
+  font-family: "Lato";
+  color: #5a5a5a;
+  line-height: 2;
+}
+
+.pink-line1:before {
+  content: "";
+  display: block;
+  border: 1px solid #ed145b;
+  width: 200px;
+  margin-bottom: 38px;
+}
+
+.text-button {
+  font-size: 15px;
+  font-family: "Lato";
+  color: #ed145b;
+  text-transform: uppercase;
+  line-height: 2;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.play-button img {
+  float: right;
+  margin-right: 390px;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.services .title-section {
+  margin-top: 100px;
+}
+
+.circle-services {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.circle {
+  -ms-flex: 1;
+      flex: 1;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
