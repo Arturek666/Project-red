@@ -1,5 +1,8 @@
 body * {
     box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
 }
@@ -10,43 +13,46 @@ body * {
     margin: 0 auto;
 }
 
+.menu-header {
 
-header {
-
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        float: right;
-        margin-right: 430px;
-    }
 
     li {
-        display: inline-block;
-        margin-top: 50px;
         padding-right: 15px;
-        a {
-            color: #FFF;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-            font-family: "Lato";
-            font-weight: bold;
-            line-height: 2.375;
+        &:first-child {
+            margin-right: 640px;
         }
+    }
+
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        color: black;
+        list-style-type: none;
+        flex-direction: row;
+        padding-top: 45px;
+        padding-right: 430px;
+    }
+
+
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: "Lato";
+        font-weight: bold;
+        line-height: 2.375;
     }
 }
 
-
-
-.activate {
-    color: rgb(237, 20, 91);
+li .activate {
+    color: #ed145b;
 }
 
-.logo img {
-    margin-left: 395.029px;
-    margin-top: 60.753px;
-}
+
+
 
 
 .hero {
@@ -55,4 +61,79 @@ header {
     position: relative;
     width: 100%;
     height: 800px;
+}
+
+.mache {
+    display: flex;
+
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.p-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.pink-line {
+    padding-top: 35px;
+    font-size: 22px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    line-height: 1.727;
+    text-align: center;
+}
+
+.pink-line:before {
+
+    content: "";
+    display: block;
+    border: 1px solid #ed145b;
+    width: 200px;
+    margin: 38px auto;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+}
+
+.btn {
+    border-radius: 24px;
+    background-color: rgb(237, 20, 91);
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 1s;
+    font-size: 15px;
+    font-family: "Lato";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 2.533;
+    text-align: center;
+    border: none;
+}
+
+.pink-bar {
+    background-image: url("../images/Pink-bar.png");
+    width: 100%;
+    height: 78px;
+    margin: 0;
+    line-height: 0;
+    background-repeat: no-repeat;
+}
+
+.title-section {
+
+    font-size: 38px;
+    font-family: "Lato";
+    color: rgb(90, 90, 90);
+    font-style: italic;
+    line-height: 1.368;
+}
+
+.flex-container {
+    display: flex;
 }
