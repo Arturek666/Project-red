@@ -1,37 +1,34 @@
-body * {
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+* {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
 
 .container {
   width: 100%;
-  max-width: 2000px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-.menu-header li {
+nav li {
   padding-right: 15px;
 }
 
-.menu-header li:first-child {
-  margin-right: 640px;
+nav li:first-child {
+  margin-right: 500px;
 }
 
-.menu-header ul {
+nav ul {
   display: flex;
   justify-content: flex-end;
   color: black;
   list-style-type: none;
   flex-direction: row;
   padding-top: 45px;
-  padding-right: 430px;
 }
 
-.menu-header a {
+nav a {
   color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
@@ -45,11 +42,16 @@ li .activate {
   color: #ed145b;
 }
 
+.mac img {
+  width: 1037px;
+  height: 633px;
+  margin: 0 auto;
+}
+
 .hero {
   background-image: url("../images/background.png");
   background-size: cover;
-  position: relative;
-  width: 100%;
+  width: 100vw;
   height: 800px;
 }
 
@@ -57,11 +59,6 @@ li .activate {
   display: flex;
   justify-content: center;
   padding-top: 200px;
-}
-
-.p-flex {
-  display: flex;
-  justify-content: center;
 }
 
 .pink-line {
@@ -112,9 +109,8 @@ li .activate {
 
 .pink-bar {
   background-image: url("../images/Pink-bar.png");
-  width: 100%;
+  width: 100vw;
   height: 78px;
-  margin: 0;
   line-height: 0;
   background-repeat: no-repeat;
   background-color: #f4f4f4;
@@ -127,6 +123,7 @@ li .activate {
   font-style: italic;
   line-height: 1.368;
   text-align: center;
+  margin-top: 0;
 }
 
 .title-section1 {
@@ -140,26 +137,24 @@ li .activate {
 
 .row {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  margin-left: 220px;
-}
-
-.mac img {
-  margin-left: 100px;
 }
 
 .psd-ad {
-  background-color: #f4f4f4;
   height: 510px;
 }
 
 .psd-ad-height {
-  height: 600px;
+  height: 620px;
+  justify-content: center;
+  display: flex;
+  padding-top: 50px;
+  background-color: #f4f4f4;
 }
 
 .p-flex-about .pink-line {
@@ -193,10 +188,11 @@ li .activate {
 }
 
 .play-button img {
+  margin-right: 330px;
   float: right;
-  margin-right: 390px;
 }
 
+.clearfix:before,
 .clearfix:after {
   content: "";
   clear: both;
@@ -266,29 +262,54 @@ li .activate {
 }
 
 .prices-section {
-  margin-top: 120px;
-}
-
-.per_month {
-  background-image: url("per month.png");
-  position: absolute;
-  left: 430px;
-  top: 3046px;
-  width: 262px;
-  height: 466px;
-  z-index: 181;
+  background-color: #f4f4f4;
+  margin-top: 0;
 }
 
 .white-box {
   background-color: white;
   width: 262px;
-  height: 443px;
+  height: 343px;
+  margin-top: 0;
+  padding-top: 70px;
 }
 
-.gray-box {
+.white-box ul {
+  margin-top: 0;
+  padding-right: 30px;
+}
+
+.white-box ul li {
+  font-size: 15px;
+  font-family: "Lato";
+  color: #5a5a5a;
+  line-height: 2.533;
+  list-style-type: none;
+}
+
+.grey-box {
   background-color: #5a5a5a;
   width: 262px;
   height: 150px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.grey-box p {
+  font-size: 20px;
+  font-family: "Lato";
+  color: #f4f4f4;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0;
+}
+
+.grey-box p span {
+  font-size: 50px;
+  font-family: "Lato";
+  color: #f4f4f4;
+  font-weight: bold;
+  text-align: center;
 }
 
 .button-white {
@@ -296,6 +317,19 @@ li .activate {
   background-color: #f4f4f4;
   width: 200px;
   height: 50px;
+  font-size: 15px;
+  font-family: "Lato";
+  color: #5a5a5a;
+  font-weight: bold;
+  line-height: 2.533;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  text-transform: uppercase;
+  border: 0;
 }
 
 .button-pink {
@@ -303,6 +337,303 @@ li .activate {
   background-color: #ed145b;
   width: 200px;
   height: 50px;
+  font-size: 15px;
+  font-family: "Lato";
+  color: #f4f4f4;
+  font-weight: bold;
+  line-height: 2.533;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border: 0;
+}
+
+.prices-box {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+  padding-bottom: 120px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.row2:first-child {
+  padding-top: 50px;
+}
+
+.row2:last-child {
+  padding-bottom: 100px;
+}
+
+.prices-section .title-section {
+  padding-top: 100px;
+}
+
+.price-box {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.icons-section {
+  display: flex;
+}
+
+.icons-section .feature {
+  display: flex;
+  margin: 20px 10px;
+}
+
+.icons-section .feature img {
+  width: 55px;
+  height: 55px;
+  margin-top: 23px;
+}
+
+.icons-section .feature .title-feature {
+  padding: 0 10px 0 10px;
+}
+
+.icons-section .feature .title-feature h1 {
+  font-size: 15px;
+  font-family: "Lato";
+  color: #ed145b;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: left;
+}
+
+.icons-section .feature .title-feature p {
+  font-size: 15px;
+  font-family: "Lato";
+  color: #5a5a5a;
+  line-height: 2;
+  text-align: left;
+}
+
+.community-bar {
+  background-color: #ed145b;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  margin-bottom: 120px;
+}
+
+.community-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.community-text img {
+  object-fit: contain;
+}
+
+.btn-community {
+  border-radius: 25px;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 15px;
+  font-family: "Lato";
+  color: #ed145b;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+/* GALLERY SECTION */
+.gallery > p {
+  margin-bottom: 92px;
+}
+
+.gallery-box {
+  margin: 0;
+  background-color: #f4f4f4;
+  width: 360px;
+  min-height: 390px;
+}
+
+.gallery-box:last-of-type {
+  margin-right: 0;
+}
+
+.gallery-box p {
+  color: #5a5a5a;
+  font: 300 15px/30px Lato;
+  padding: 0 28px;
+}
+
+.gallery-box h5 {
+  margin: 15px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #5a5a5a;
+  font-size: 30px;
+  font-family: "Lato";
+}
+
+.box-layer {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  cursor: pointer;
+}
+
+.box-layer > img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  height: 250px;
+}
+
+.box-layer::before {
+  content: "";
+  background-color: #ed145b;
+  width: 200%;
+  height: 120%;
+  transform: -webkit-rotate(2deg);
+  transform: -ms-rotate(2deg);
+  transform: rotate(2deg);
+  left: -20%;
+  top: 0;
+  margin-top: 245px;
+  transition: .8s ease-in;
+  position: absolute;
+  z-index: 1;
+}
+
+.search-icon {
+  background: url("../search-icon.png");
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .8s ease;
+  z-index: 2;
+}
+
+.gallery-box:hover .search-icon {
+  transition-delay: .4s;
+  opacity: 1;
+}
+
+.gallery-box:hover .box-layer::before {
+  margin-top: -20px;
+  background-color: rgba(237, 20, 91, 0.8);
+}
+
+[class*="col-"] {
+  float: left;
+  min-height: 1px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-offset-1 {
+  margin-left: 8.33%;
+}
+
+.col-offset-2 {
+  margin-left: 16.66%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66%;
 }
 
 /*# sourceMappingURL=style.css.map */
