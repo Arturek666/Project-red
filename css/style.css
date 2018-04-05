@@ -36,9 +36,10 @@ nav a {
   font-family: "Lato";
   font-weight: bold;
   line-height: 2.375;
+  transition-duration: 0.6s;
 }
 
-li .activate {
+nav a:hover {
   color: #ed145b;
 }
 
@@ -64,8 +65,8 @@ li .activate {
 .pink-line {
   font-size: 22px;
   font-family: "Lato";
-  color: white;
   line-height: 1.727;
+  color: #FFF;
   text-align: center;
   margin: 0;
 }
@@ -87,24 +88,22 @@ li .activate {
 .btn {
   border-radius: 24px;
   background-color: #ed145b;
-  width: 200px;
-  height: 50px;
+  padding: 15px 60px;
   cursor: pointer;
   text-transform: uppercase;
-  transition: transform 1s;
   font-size: 15px;
   font-family: "Lato";
   color: white;
   font-weight: bold;
-  line-height: 2.533;
   text-align: center;
   border: none;
+  transition: 0.6s;
 }
 
 .btn:hover {
-  background-position: right center;
-  /* change the direction of the change here */
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
+  background-color: #FFF;
+  border: 1px solid #ed145b;
+  color: #ed145b;
 }
 
 .pink-bar {
@@ -166,7 +165,7 @@ li .activate {
   font-family: "Lato";
   color: #5a5a5a;
   line-height: 2;
-  margin: 0;
+  margin: 38px auto;
 }
 
 .pink-line1:before {
@@ -187,9 +186,31 @@ li .activate {
   padding-bottom: 30px;
 }
 
-.play-button img {
-  margin-right: 330px;
+.play-button {
+  margin: 0;
   float: right;
+}
+
+.play-button:hover {
+  padding: 5px;
+  transition: 0.6s;
+}
+
+.play-button .text-button {
+  margin-top: 8px;
+}
+
+.play-button img {
+  padding: 10px;
+  margin-bottom: 30px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.video-button {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
 }
 
 .clearfix:before,
@@ -213,10 +234,16 @@ li .activate {
 .circle img {
   item: center;
   display: flex;
+  transition: 0.6s;
+}
+
+.circle img:hover {
+  transform: scale(1.1);
 }
 
 .circle-title {
   color: #ed145b;
+  margin-top: 15px;
 }
 
 .pink-line-title {
@@ -245,6 +272,10 @@ li .activate {
   margin-top: 120px;
 }
 
+.slide img {
+  margin: 40px;
+}
+
 .flex-slide {
   font-size: 25px;
   font-family: "Lato";
@@ -271,12 +302,10 @@ li .activate {
   width: 262px;
   height: 343px;
   margin-top: 0;
-  padding-top: 70px;
-}
-
-.white-box ul {
-  margin-top: 0;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .white-box ul li {
@@ -302,6 +331,7 @@ li .activate {
   font-weight: bold;
   text-align: center;
   line-height: 0;
+  margin: 20px;
 }
 
 .grey-box p span {
@@ -335,17 +365,22 @@ li .activate {
 .button-pink {
   border-radius: 24px;
   background-color: #ed145b;
-  width: 200px;
-  height: 50px;
+  padding: 15px 60px;
   font-size: 15px;
   font-family: "Lato";
   color: #f4f4f4;
   font-weight: bold;
-  line-height: 2.533;
   text-align: center;
   text-transform: uppercase;
   margin-top: 20px;
+  transition: 0.6s;
   border: 0;
+}
+
+.button-pink:hover {
+  background-color: #FFF;
+  border: 1px solid #ed145b;
+  color: #ed145b;
 }
 
 .prices-box {
@@ -452,55 +487,61 @@ li .activate {
   border: 0;
   margin-top: 80px;
   margin-left: 20px;
+  transition: 0.6s;
+}
+
+.btn-community:hover {
+  background-color: #ed145b;
+  border: 1px solid #FFF;
+  color: #FFF;
 }
 
 /* GALLERY SECTION */
-.gallery > p {
-  margin-bottom: 92px;
+.gallery {
+  color: #5a5a5a;
 }
 
-.gallery-box {
-  margin: 0;
+.gallery h2,
+.gallery .center {
+  text-align: center;
+  margin: 0 20%;
+}
+
+.gallery .photo {
+  padding: 30px 20px 0 20px;
+}
+
+.gallery .photo .image {
+  line-height: 0;
+}
+
+.gallery .describtion {
   background-color: #f4f4f4;
-  width: 360px;
-  min-height: 390px;
+  padding: 20px;
 }
 
-.gallery-box:last-of-type {
+.gallery .describtion p {
+  font: 300 15px/30px Lato;
+}
+
+.photo:last-of-type {
   margin-right: 0;
 }
 
-.gallery-box p {
-  color: #5a5a5a;
-  font: 300 15px/30px Lato;
-  padding: 0 28px;
-}
-
-.gallery-box h5 {
-  margin: 15px 0;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #5a5a5a;
-  font-size: 30px;
-  font-family: "Lato";
-}
-
-.box-layer {
+.image {
   position: relative;
   overflow: hidden;
   height: 250px;
   cursor: pointer;
 }
 
-.box-layer > img {
+.image > img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 360px;
-  height: 250px;
 }
 
-.box-layer::before {
+.image::before {
   content: "";
   background-color: #ed145b;
   width: 200%;
@@ -516,8 +557,8 @@ li .activate {
   z-index: 1;
 }
 
-.search-icon {
-  background: url("../search-icon.png");
+.search-ico {
+  background: url("../images/search-icon.png");
   height: 45px;
   width: 45px;
   position: absolute;
@@ -529,19 +570,79 @@ li .activate {
   z-index: 2;
 }
 
-.gallery-box:hover .search-icon {
+.photo:hover .search-ico {
   transition-delay: .4s;
   opacity: 1;
 }
 
-.gallery-box:hover .box-layer::before {
+.photo:hover .image::before {
   margin-top: -20px;
   background-color: rgba(237, 20, 91, 0.8);
 }
 
-[class*="col-"] {
-  float: left;
-  min-height: 1px;
+.arrow {
+  text-align: center;
+  color: #ed145b;
+  text-transform: uppercase;
+  font-family: "Lato";
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 65px;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center button {
+  margin: 30px auto 0 auto;
+}
+
+.psd-template {
+  background-image: url("../images/background3.png");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.psd-template p {
+  color: white;
+}
+
+.psd-template h1 {
+  color: white;
+}
+
+.download-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.download-section img {
+  margin-right: 50px;
+}
+
+footer {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2b2b2b;
+  color: white;
+  width: 100%;
+  padding: 25px;
+  margin-top: 0;
+}
+
+.psd-template .button-pink:hover {
+  background-color: rgba 0 0 0 0;
 }
 
 .col-1 {

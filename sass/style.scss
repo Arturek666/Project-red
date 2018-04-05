@@ -1,704 +1,815 @@
-         @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
-         * {
-             box-sizing: border-box;
-             margin: 0;
-             padding: 0;
+ @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+ $pinkColor: #ed145b;
+ $greyColor: #f4f4f4;
+ $whiteColor: #FFF;
+ $fontLato: "Lato";
+
+ * {
+
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+
+
+ .container {
+     width: 100%;
+     max-width: 1140px;
+     margin: 0 auto;
+ }
+
+ nav {
+
+
+     li {
+         padding-right: 15px;
+         &:first-child {
+             margin-right: 500px;
          }
+     }
+
+
+     ul {
+         display: flex;
+         justify-content: flex-end;
+         color: black;
+         list-style-type: none;
+         flex-direction: row;
+         padding-top: 45px;
+     }
 
 
 
-         .container {
-             width: 100%;
-             max-width: 1140px;
-             margin: 0 auto;
+     a {
+         color: #FFF;
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: 16px;
+         font-family: $fontLato;
+         font-weight: bold;
+         line-height: 2.375;
+         transition-duration: 0.6s;
+         &:hover {
+             color: $pinkColor;
          }
-
-         nav {
-
-
-             li {
-                 padding-right: 15px;
-                 &:first-child {
-                     margin-right: 500px;
-                 }
-             }
-
-
-             ul {
-                 display: flex;
-                 justify-content: flex-end;
-                 color: black;
-                 list-style-type: none;
-                 flex-direction: row;
-                 padding-top: 45px;
-             }
+     }
+ }
 
 
 
-             a {
-                 color: #FFF;
-                 text-decoration: none;
-                 text-transform: uppercase;
-                 font-size: 16px;
-                 font-family: "Lato";
-                 font-weight: bold;
-                 line-height: 2.375;
-             }
-         }
+ .mac img {
+     width: 1037px;
+     height: 633px;
+     margin: 0 auto;
+ }
 
-         li .activate {
-             color: #ed145b;
-         }
+ .hero {
+     background-image: url("../images/background.png");
+     background-size: cover;
+     width: 100vw;
+     height: 800px;
+ }
 
-         .mac img {
-             width: 1037px;
-             height: 633px;
-             margin: 0 auto;
-         }
+ .mache {
+     display: flex;
+     justify-content: center;
+     padding-top: 200px;
+ }
 
-         .hero {
-             background-image: url("../images/background.png");
-             background-size: cover;
+ .pink-line {
 
-             width: 100vw;
-             height: 800px;
-         }
+     font-size: 22px;
+     font-family: $fontLato;
+     line-height: 1.727;
+     color: $whiteColor;
+     text-align: center;
+     margin: 0;
+ }
 
-         .mache {
-             display: flex;
+ .pink-line:before {
 
-             justify-content: center;
-             padding-top: 200px;
-         }
+     content: "";
+     display: block;
+     border: 1px solid $pinkColor;
+     width: 200px;
+     margin: 38px auto;
+ }
+
+ .btn-flex {
+     display: flex;
+     justify-content: center;
+     margin-top: 65px;
+ }
+
+ .btn {
+     border-radius: 24px;
+     background-color: rgb(237, 20, 91);
+     padding: 15px 60px;
+     cursor: pointer;
+     text-transform: uppercase;
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     text-align: center;
+     border: none;
+     transition: 0.6s;
+
+     &:hover {
+         background-color: $whiteColor;
+         border: 1px solid $pinkColor;
+         color: $pinkColor;
+     }
+ }
 
 
 
 
-         .pink-line {
 
-             font-size: 22px;
-             font-family: "Lato";
-             color: rgb(255, 255, 255);
-             line-height: 1.727;
-             text-align: center;
-             margin: 0;
-         }
 
-         .pink-line:before {
 
-             content: "";
-             display: block;
-             border: 1px solid #ed145b;
-             width: 200px;
-             margin: 38px auto;
-         }
 
-         .btn-flex {
-             display: flex;
-             justify-content: center;
-             margin-top: 65px;
-         }
 
-         .btn {
-             border-radius: 24px;
-             background-color: rgb(237, 20, 91);
-             width: 200px;
-             height: 50px;
-             cursor: pointer;
-             text-transform: uppercase;
-             transition: transform 1s;
+ .pink-bar {
+     background-image: url("../images/Pink-bar.png");
+     width: 100vw;
+     height: 78px;
+
+     line-height: 0;
+     background-repeat: no-repeat;
+     background-color: rgb(244, 244, 244);
+ }
+
+ .title-section {
+
+     font-size: 38px;
+     font-family: "Lato";
+     color: rgb(90, 90, 90);
+     font-style: italic;
+     line-height: 1.368;
+     text-align: center;
+     margin-top: 0;
+ }
+
+ .title-section1 {
+
+     font-size: 38px;
+     font-family: "Lato";
+     color: rgb(90, 90, 90);
+     font-style: italic;
+     line-height: 1.368;
+     text-align: left;
+ }
+
+
+
+ .row {
+     display: flex;
+     justify-content: center;
+ }
+
+ .column {
+     display: flex;
+     flex-direction: column;
+ }
+
+
+
+
+ .psd-ad {
+
+     height: 510px
+ }
+
+ .psd-ad-height {
+     height: 620px;
+     justify-content: center;
+     display: flex;
+     padding-top: 50px;
+     background-color: rgb(244, 244, 244);
+ }
+
+ .p-flex-about .pink-line {
+     text-align: left;
+ }
+
+
+
+ .pink-line1 {
+
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(90, 90, 90);
+     line-height: 2;
+     margin: 38px auto;
+ }
+
+ .pink-line1:before {
+
+     content: "";
+     display: block;
+     border: 1px solid #ed145b;
+     width: 200px;
+     margin-bottom: 38px;
+ }
+
+ .text-button {
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(237, 20, 91);
+     text-transform: uppercase;
+     line-height: 2;
+     cursor: pointer;
+     padding-bottom: 30px;
+ }
+
+ .play-button {
+     margin: 0;
+     float: right;
+     &:hover {
+         padding: 5px;
+         transition: 0.6s;
+     }
+     .text-button {
+         margin-top: 8px;
+     }
+
+
+     img {
+         padding: 10px;
+         margin-bottom: 30px;
+         object-fit: contain;
+         cursor: pointer;
+     }
+ }
+
+
+ .video-button {
+     display: flex;
+     flex: 1;
+     flex-direction: row;
+ }
+
+ .clearfix:before,
+ .clearfix:after {
+     content: "";
+     clear: both;
+     display: table;
+ }
+
+ .services .title-section {
+     margin-top: 100px;
+     margin-bottom: 0;
+ }
+
+ .circle-services {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 100px;
+ }
+
+
+
+ .circle img {
+     item: center;
+     display: flex;
+     transition: 0.6s;
+     &:hover {
+         transform: scale(1.1);
+     }
+ }
+
+ .circle-title {
+     color: #ed145b;
+     margin-top: 15px;
+ }
+
+ .pink-line-title {
+
+
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(90, 90, 90);
+     line-height: 2;
+     text-align: center;
+     margin: 0;
+ }
+
+ .pink-line-title:before {
+
+     content: "";
+     display: block;
+     border: 1px solid #ed145b;
+     width: 200px;
+     margin: 38px auto;
+ }
+
+ .slide {
+     background-image: url("../images/background2.png");
+     background-size: cover;
+     position: relative;
+     width: 100%;
+     height: 501px;
+     margin-top: 120px;
+     img {
+         margin: 40px;
+     }
+ }
+
+
+ .flex-slide {
+
+     font-size: 25px;
+     font-family: "Lato";
+     color: rgb(255, 255, 255);
+     font-style: italic;
+     line-height: 1.6;
+     text-align: center;
+ }
+
+ .flex-slide-section {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .prices-section {
+     background-color: rgb(244, 244, 244);
+     margin-top: 0;
+ }
+
+
+
+ .white-box {
+     background-color: rgb(255, 255, 255);
+     width: 262px;
+     height: 343px;
+     margin-top: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     ul {
+
+
+
+
+         li {
+
              font-size: 15px;
              font-family: "Lato";
-             color: rgb(255, 255, 255);
-             font-weight: bold;
+             color: rgb(90, 90, 90);
              line-height: 2.533;
-             text-align: center;
-             border: none;
+             list-style-type: none;
          }
-
-         .btn:hover {
-             background-position: right center;
-             /* change the direction of the change here */
-             background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-         }
-
-
-
-
-
-
-
-         .pink-bar {
-             background-image: url("../images/Pink-bar.png");
-             width: 100vw;
-             height: 78px;
-
-             line-height: 0;
-             background-repeat: no-repeat;
-             background-color: rgb(244, 244, 244);
-         }
-
-         .title-section {
-
-             font-size: 38px;
-             font-family: "Lato";
-             color: rgb(90, 90, 90);
-             font-style: italic;
-             line-height: 1.368;
-             text-align: center;
-             margin-top: 0;
-         }
-
-         .title-section1 {
-
-             font-size: 38px;
-             font-family: "Lato";
-             color: rgb(90, 90, 90);
-             font-style: italic;
-             line-height: 1.368;
-             text-align: left;
-         }
-
-
-
-         .row {
-             display: flex;
-             justify-content: center;
-         }
-
-         .column {
-             display: flex;
-             flex-direction: column;
-         }
-
-
-
-
-         .psd-ad {
-
-             height: 510px
-         }
-
-         .psd-ad-height {
-             height: 620px;
-             justify-content: center;
-             display: flex;
-             padding-top: 50px;
-             background-color: rgb(244, 244, 244);
-         }
-
-         .p-flex-about .pink-line {
-             text-align: left;
-         }
-
-
-
-         .pink-line1 {
-
-             font-size: 15px;
-             font-family: "Lato";
-             color: rgb(90, 90, 90);
-             line-height: 2;
-             margin: 0;
-         }
-
-         .pink-line1:before {
-
-             content: "";
-             display: block;
-             border: 1px solid #ed145b;
-             width: 200px;
-             margin-bottom: 38px;
-         }
-
-         .text-button {
-             font-size: 15px;
-             font-family: "Lato";
-             color: rgb(237, 20, 91);
-             text-transform: uppercase;
-             line-height: 2;
-             cursor: pointer;
-             padding-bottom: 30px;
-         }
-
-         .play-button img {
-             margin-right: 330px;
-             float: right;
-         }
-
-         .clearfix:before,
-         .clearfix:after {
-             content: "";
-             clear: both;
-             display: table;
-         }
-
-         .services .title-section {
-             margin-top: 100px;
-             margin-bottom: 0;
-         }
-
-         .circle-services {
-             display: flex;
-             justify-content: space-around;
-             margin-top: 100px;
-         }
-
-
-
-         .circle img {
-             item: center;
-             display: flex;
-         }
-
-         .circle-title {
-             color: #ed145b;
-         }
-
-         .pink-line-title {
-
-
-             font-size: 15px;
-             font-family: "Lato";
-             color: rgb(90, 90, 90);
-             line-height: 2;
-             text-align: center;
-             margin: 0;
-         }
-
-         .pink-line-title:before {
-
-             content: "";
-             display: block;
-             border: 1px solid #ed145b;
-             width: 200px;
-             margin: 38px auto;
-         }
-
-         .slide {
-             background-image: url("../images/background2.png");
-             background-size: cover;
-             position: relative;
-             width: 100%;
-             height: 501px;
-             margin-top: 120px;
-         }
-
-
-         .flex-slide {
-
-             font-size: 25px;
-             font-family: "Lato";
-             color: rgb(255, 255, 255);
-             font-style: italic;
-             line-height: 1.6;
-             text-align: center;
-         }
-
-         .flex-slide-section {
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             flex-direction: column;
-         }
-
-         .prices-section {
-             background-color: rgb(244, 244, 244);
-             margin-top: 0;
-         }
-
-
-
-         .white-box {
-             background-color: rgb(255, 255, 255);
-             width: 262px;
-             height: 343px;
-             margin-top: 0;
-             padding-top: 70px;
-             ul {
-                 margin-top: 0;
-                 padding-right: 30px;
-
-
-
-                 li {
-
-                     font-size: 15px;
-                     font-family: "Lato";
-                     color: rgb(90, 90, 90);
-                     line-height: 2.533;
-                     list-style-type: none;
-                 }
-             }
-         }
-
-         .grey-box {
-             background-color: rgb(90, 90, 90);
-             width: 262px;
-             height: 150px;
-             position: relative;
-             padding-top: 30px;
-             p {
-
-                 font-size: 20px;
-                 font-family: "Lato";
-                 color: rgb(244, 244, 244);
-                 font-weight: bold;
-                 text-align: center;
-                 line-height: 0;
-
-
-                 span {
-
-                     font-size: 50px;
-                     font-family: "Lato";
-                     color: rgb(244, 244, 244);
-                     font-weight: bold;
-                     text-align: center;
-                 }
-             }
-         }
-
-         .button-white {
-             border-radius: 25px;
-             background-color: rgb(244, 244, 244);
-             width: 200px;
-             height: 50px;
-             font-size: 15px;
-             font-family: "Lato";
-             color: rgb(90, 90, 90);
-             font-weight: bold;
-             line-height: 2.533;
-             text-align: center;
-             text-transform: uppercase;
-             position: absolute;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             top: 100%;
-             text-transform: uppercase;
-             border: 0;
-         }
-
-         .button-pink {
-             border-radius: 24px;
-             background-color: rgb(237, 20, 91);
-             width: 200px;
-             height: 50px;
-             font-size: 15px;
+     }
+ }
+
+ .grey-box {
+     background-color: rgb(90, 90, 90);
+     width: 262px;
+     height: 150px;
+     position: relative;
+     padding-top: 30px;
+     p {
+
+         font-size: 20px;
+         font-family: "Lato";
+         color: rgb(244, 244, 244);
+         font-weight: bold;
+         text-align: center;
+         line-height: 0;
+         margin: 20px;
+
+
+         span {
+
+             font-size: 50px;
              font-family: "Lato";
              color: rgb(244, 244, 244);
              font-weight: bold;
-             line-height: 2.533;
              text-align: center;
-             text-transform: uppercase;
-             margin-top: 20px;
-             border: 0;
          }
+     }
+ }
 
-         .prices-box {
-             text-align: center;
-             position: relative;
-             margin-top: 20px;
-             margin-bottom: 50px;
+ .button-white {
+     border-radius: 25px;
+     background-color: rgb(244, 244, 244);
+     width: 200px;
+     height: 50px;
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(90, 90, 90);
+     font-weight: bold;
+     line-height: 2.533;
+     text-align: center;
+     text-transform: uppercase;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     top: 100%;
+     text-transform: uppercase;
+     border: 0;
+ }
+
+ .button-pink {
+     border-radius: 24px;
+     background-color: rgb(237, 20, 91);
+     padding: 15px 60px;
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(244, 244, 244);
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     margin-top: 20px;
+     transition: 0.6s;
+     border: 0;
+     &:hover {
+         background-color: $whiteColor;
+         border: 1px solid $pinkColor;
+         color: $pinkColor;
+     }
+ }
+
+
+
+
+
+
+ .prices-box {
+     text-align: center;
+     position: relative;
+     margin-top: 20px;
+     margin-bottom: 50px;
+ }
+
+ .row1 {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 90px;
+     padding-bottom: 120px
+ }
+
+ .row2 {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .row2:first-child {
+
+
+     padding-top: 50px;
+ }
+
+ .row2:last-child {
+
+
+     padding-bottom: 100px;
+ }
+
+ .prices-section .title-section {
+     padding-top: 100px;
+ }
+
+
+
+ .price-box {
+     margin-right: 10px;
+     margin-left: 10px;
+ }
+
+ .icons-section {
+     display: flex;
+
+
+
+
+
+
+     .feature {
+         display: flex;
+         margin: 20px 10px;
+         img {
+             width: 55px;
+             height: 55px;
+             margin-top: 23px;
          }
+         .title-feature {
+             padding: 0 10px 0 10px;
+             h1 {
 
-         .row1 {
-             display: flex;
-             justify-content: space-around;
-             margin-top: 90px;
-             padding-bottom: 120px
-         }
-
-         .row2 {
-             display: flex;
-             justify-content: space-around;
-         }
-
-         .row2:first-child {
-
-
-             padding-top: 50px;
-         }
-
-         .row2:last-child {
-
-
-             padding-bottom: 100px;
-         }
-
-         .prices-section .title-section {
-             padding-top: 100px;
-         }
-
-
-
-         .price-box {
-             margin-right: 10px;
-             margin-left: 10px;
-         }
-
-         .icons-section {
-             display: flex;
-
-
-
-
-
-
-             .feature {
-                 display: flex;
-                 margin: 20px 10px;
-                 img {
-                     width: 55px;
-                     height: 55px;
-                     margin-top: 23px;
-                 }
-                 .title-feature {
-                     padding: 0 10px 0 10px;
-                     h1 {
-
-                         font-size: 15px;
-                         font-family: "Lato";
-                         color: rgb(237, 20, 91);
-                         text-transform: uppercase;
-                         line-height: 2;
-                         text-align: left;
-                     }
-                     p {
-
-                         font-size: 15px;
-                         font-family: "Lato";
-                         color: rgb(90, 90, 90);
-                         line-height: 2;
-                         text-align: left;
-                     }
-                 }
-             }
-         }
-
-         .community-bar {
-             background-color: rgb(237, 20, 91);
-             width: 100%;
-             height: 200px;
-             display: flex;
-             margin-bottom: 120px;
-         }
-
-
-         .community-text {
-             flex: 1;
-             display: flex;
-             justify-content: center;
-         }
-
-         .community-text img {
-             object-fit: contain;
-         }
-
-
-
-
-         .btn-community {
-             border-radius: 25px;
-             background-color: white;
-             width: 200px;
-             height: 50px;
-             font-size: 15px;
-             font-family: "Lato";
-             color: rgb(237, 20, 91);
-             font-weight: bold;
-
-             text-align: center;
-             text-transform: uppercase;
-             border: 0;
-             margin-top: 80px;
-             margin-left: 20px;
-         }
-         /* GALLERY SECTION */
-
-         .gallery>p {
-             margin-bottom: 92px;
-         }
-
-
-
-         .gallery-box:last-of-type {
-             margin-right: 0;
-         }
-
-         .gallery-box {
-             margin: 0 background-color: #f4f4f4;
-             width: 360px;
-             min-height: 390px;
-             h5 {
-                 margin: 15px 0;
-                 font-weight: 700;
+                 font-size: 15px;
+                 font-family: "Lato";
+                 color: rgb(237, 20, 91);
                  text-transform: uppercase;
+                 line-height: 2;
+                 text-align: left;
              }
              p {
-                 color: #5a5a5a;
-                 font: 300 15px/30px Lato;
-                 padding: 0 28px;
+
+                 font-size: 15px;
+                 font-family: "Lato";
+                 color: rgb(90, 90, 90);
+                 line-height: 2;
+                 text-align: left;
              }
          }
+     }
+ }
+
+ .community-bar {
+     background-color: rgb(237, 20, 91);
+     width: 100%;
+     height: 200px;
+     display: flex;
+     margin-bottom: 120px;
+ }
+
+
+ .community-text {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+ }
+
+ .community-text img {
+     object-fit: contain;
+ }
 
 
 
-         .box-layer {
-             position: relative;
-             overflow: hidden;
-             height: 250px;
-             cursor: pointer;
+
+ .btn-community {
+     border-radius: 25px;
+     background-color: white;
+     width: 200px;
+     height: 50px;
+     font-size: 15px;
+     font-family: "Lato";
+     color: rgb(237, 20, 91);
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     border: 0;
+     margin-top: 80px;
+     margin-left: 20px;
+     transition: 0.6s;
+     &:hover {
+         background-color: $pinkColor;
+         border: 1px solid $whiteColor;
+         color: $whiteColor;
+     }
+ }
+ /* GALLERY SECTION */
+
+ .gallery {
+     color: #5a5a5a;
+ }
+
+ .gallery h2,
+ .gallery .center {
+     text-align: center;
+     margin: 0 20%;
+ }
+
+
+ .gallery .photo {
+     padding: 30px 20px 0 20px;
+ }
+
+ .gallery .photo .image {
+     line-height: 0;
+ }
+
+ .gallery .describtion {
+     background-color: #f4f4f4;
+     padding: 20px;
+ }
+
+ .gallery .describtion p {
+     font: 300 15px/30px Lato;
+ }
+
+ .photo:last-of-type {
+     margin-right: 0;
+ }
+
+
+ .image {
+     position: relative;
+     overflow: hidden;
+     height: 250px;
+     cursor: pointer;
+ }
+
+ .image>img {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ .image::before {
+     content: "";
+     background-color: #ed145b;
+     width: 200%;
+     height: 120%;
+     transform: -webkit-rotate(2deg);
+     transform: -ms-rotate(2deg);
+     transform: rotate(2deg);
+     left: -20%;
+     top: 0;
+     margin-top: 245px;
+     transition: .8s ease-in;
+     position: absolute;
+     z-index: 1;
+ }
+
+ .search-ico {
+     background: url("../images/search-icon.png");
+     height: 45px;
+     width: 45px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     opacity: 0;
+     transition: opacity .8s ease;
+     z-index: 2;
+ }
+
+ .photo:hover .search-ico {
+     transition-delay: .4s;
+     opacity: 1;
+ }
+
+ .photo:hover .image::before {
+     margin-top: -20px;
+     background-color: rgba(237, 20, 91, 0.8);
+ }
+
+ .arrow {
+     text-align: center;
+     color: rgb(237, 20, 91);
+     text-transform: uppercase;
+     font-family: "Lato";
+     font-weight: bold;
+     margin-top: 100px;
+     margin-bottom: 65px;
+ }
+
+ .flex-center {
+     display: flex;
+     flex-direction: column;
+     button {
+         margin: 30px auto 0 auto;
+     }
+ }
+
+ .psd-template {
+
+     background-image: url("../images/background3.png");
+     background-size: cover;
+     position: relative;
+     width: 100%;
+     height: 650px;
+     display: flex;
+     align-items: center;
+     p {
+         color: white;
+     }
+
+     h1 {
+         color: white;
+     }
+ }
+
+ .download-section {
+     display: flex;
+     flex: 1;
+     justify-content: center;
+     align-items: center;
+     margin-top: 80px;
+     img {
+         margin-right: 50px;
+     }
+ }
+
+ footer {
+     display: flex;
+     flex: 1;
+     justify-content: space-around;
+     align-items: center;
+     background-color: rgb(43, 43, 43);
+     color: white;
+     width: 100%;
+     padding: 25px;
+     margin-top: 0;
+ }
+
+ .psd-template {
+     .button-pink {
+         &:hover {
+             background-color: rgba (0 0 0 0);
          }
-
-         .box-layer>img {
-             position: absolute;
-             left: 50%;
-             transform: translateX(-50%);
-             width: 360px;
-             height: 250px;
-         }
-
-         .box-layer::before {
-             content: "";
-             background-color: #ed145b;
-             width: 200%;
-             height: 120%;
-             transform: -webkit-rotate(2deg);
-             transform: -ms-rotate(2deg);
-             transform: rotate(2deg);
-             left: -20%;
-             top: 0;
-             margin-top: 245px;
-             transition: .8s ease-in;
-             position: absolute;
-             z-index: 1;
-         }
-
-         .search-icon {
-             background: url("../search-icon.png");
-             height: 45px;
-             width: 45px;
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             opacity: 0;
-             transition: opacity .8s ease;
-             z-index: 2;
-         }
-
-         .gallery-box:hover .search-icon {
-             transition-delay: .4s;
-             opacity: 1;
-         }
-
-         .gallery-box:hover .box-layer::before {
-             margin-top: -20px;
-             background-color: rgba(237, 20, 91, .8);
-         }
+     }
+ }
 
 
 
 
 
+ .col-1 {
+     width: 8.33%;
+ }
 
+ .col-2 {
+     width: 16.66%;
+ }
 
+ .col-3 {
+     width: 25%;
+ }
 
+ .col-4 {
+     width: 33.33%;
+ }
 
-         [class*="col-"] {
-             float: left;
-             min-height: 1px;
-         }
+ .col-5 {
+     width: 41.66%;
+ }
 
-         .col-1 {
-             width: 8.33%;
-         }
+ .col-6 {
+     width: 50%;
+ }
 
-         .col-2 {
-             width: 16.66%;
-         }
+ .col-7 {
+     width: 58.33%;
+ }
 
-         .col-3 {
-             width: 25%;
-         }
+ .col-8 {
+     width: 66.66%;
+ }
 
-         .col-4 {
-             width: 33.33%;
-         }
+ .col-9 {
+     width: 75%;
+ }
 
-         .col-5 {
-             width: 41.66%;
-         }
+ .col-10 {
+     width: 83.33%;
+ }
 
-         .col-6 {
-             width: 50%;
-         }
+ .col-11 {
+     width: 91.66%;
+ }
 
-         .col-7 {
-             width: 58.33%;
-         }
+ .col-12 {
+     width: 100%;
+ }
 
-         .col-8 {
-             width: 66.66%;
-         }
+ .col-offset-1 {
+     margin-left: 8.33%;
+ }
 
-         .col-9 {
-             width: 75%;
-         }
+ .col-offset-2 {
+     margin-left: 16.66%;
+ }
 
-         .col-10 {
-             width: 83.33%;
-         }
+ .col-offset-3 {
+     margin-left: 25%;
+ }
 
-         .col-11 {
-             width: 91.66%;
-         }
+ .col-offset-4 {
+     margin-left: 33.33%;
+ }
 
-         .col-12 {
-             width: 100%;
-         }
+ .col-offset-5 {
+     margin-left: 41.66%;
+ }
 
-         .col-offset-1 {
-             margin-left: 8.33%;
-         }
+ .col-offset-6 {
+     margin-left: 50%;
+ }
 
-         .col-offset-2 {
-             margin-left: 16.66%;
-         }
+ .col-offset-7 {
+     margin-left: 58.33%;
+ }
 
-         .col-offset-3 {
-             margin-left: 25%;
-         }
+ .col-offset-8 {
+     margin-left: 66.66%;
+ }
 
-         .col-offset-4 {
-             margin-left: 33.33%;
-         }
+ .col-offset-9 {
+     margin-left: 75%;
+ }
 
-         .col-offset-5 {
-             margin-left: 41.66%;
-         }
+ .col-offset-10 {
+     margin-left: 83.33%;
+ }
 
-         .col-offset-6 {
-             margin-left: 50%;
-         }
-
-         .col-offset-7 {
-             margin-left: 58.33%;
-         }
-
-         .col-offset-8 {
-             margin-left: 66.66%;
-         }
-
-         .col-offset-9 {
-             margin-left: 75%;
-         }
-
-         .col-offset-10 {
-             margin-left: 83.33%;
-         }
-
-         .col-offset-11 {
-             margin-left: 91.66%;
-         }
+ .col-offset-11 {
+     margin-left: 91.66%;
+ }
