@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,12 +46,6 @@ nav a:hover {
   color: #ed145b;
 }
 
-.mac img {
-  width: 1037px;
-  height: 633px;
-  margin: 0 auto;
-}
-
 .hero {
   background-image: url("../images/background.png");
   background-size: cover;
@@ -59,12 +53,41 @@ nav a:hover {
   height: 800px;
 }
 
-.mache {
+.hero .mache {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   padding-top: 200px;
+}
+
+.hero .btn-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 65px;
+}
+
+.hero .btn {
+  border-radius: 24px;
+  background-color: #ed145b;
+  padding: 15px 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Lato";
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  transition: 0.6s;
+}
+
+.hero .btn:hover {
+  background-color: #FFF;
+  border: 1px solid #ed145b;
+  color: #ed145b;
 }
 
 .pink-line {
@@ -82,35 +105,6 @@ nav a:hover {
   border: 1px solid #ed145b;
   width: 200px;
   margin: 38px auto;
-}
-
-.btn-flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 65px;
-}
-
-.btn {
-  border-radius: 24px;
-  background-color: #ed145b;
-  padding: 15px 60px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-family: "Lato";
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  border: none;
-  transition: 0.6s;
-}
-
-.btn:hover {
-  background-color: #FFF;
-  border: 1px solid #ed145b;
-  color: #ed145b;
 }
 
 .pink-bar {
@@ -132,33 +126,6 @@ nav a:hover {
   margin-top: 0;
 }
 
-.title-section1 {
-  font-size: 38px;
-  font-family: "Lato";
-  color: #5a5a5a;
-  font-style: italic;
-  line-height: 1.368;
-  text-align: left;
-}
-
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
-
-.column {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-}
-
-.psd-ad {
-  height: 510px;
-}
-
 .psd-ad-height {
   height: 620px;
   -ms-flex-pack: center;
@@ -167,6 +134,80 @@ nav a:hover {
   display: flex;
   padding-top: 50px;
   background-color: #f4f4f4;
+}
+
+.psd-ad-height .psd-ad {
+  height: 510px;
+}
+
+.psd-ad-height .psd-ad .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.psd-ad-height .psd-ad .row .column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.psd-ad-height .psd-ad .title-section1 {
+  font-size: 38px;
+  font-family: "Lato";
+  color: #5a5a5a;
+  font-style: italic;
+  line-height: 1.368;
+  text-align: left;
+}
+
+.psd-ad-height .psd-ad .mac img {
+  width: 1037px;
+  height: 633px;
+  margin: 0 auto;
+}
+
+.psd-ad-height .psd-ad .play-button {
+  margin: 0;
+  float: right;
+}
+
+.psd-ad-height .psd-ad .play-button:hover {
+  padding: 5px;
+  transition: 0.6s;
+}
+
+.psd-ad-height .psd-ad .play-button .video-button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+.psd-ad-height .psd-ad .play-button .text-button {
+  font-size: 15px;
+  font-family: "Lato";
+  color: #ed145b;
+  text-transform: uppercase;
+  line-height: 2;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+.psd-ad-height .psd-ad .play-button .text-button {
+  margin-top: 8px;
+}
+
+.psd-ad-height .psd-ad .play-button img {
+  padding: 10px;
+  margin-bottom: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
 }
 
 .p-flex-about .pink-line {
@@ -189,47 +230,6 @@ nav a:hover {
   margin-bottom: 38px;
 }
 
-.text-button {
-  font-size: 15px;
-  font-family: "Lato";
-  color: #ed145b;
-  text-transform: uppercase;
-  line-height: 2;
-  cursor: pointer;
-  padding-bottom: 30px;
-}
-
-.play-button {
-  margin: 0;
-  float: right;
-}
-
-.play-button:hover {
-  padding: 5px;
-  transition: 0.6s;
-}
-
-.play-button .text-button {
-  margin-top: 8px;
-}
-
-.play-button img {
-  padding: 10px;
-  margin-bottom: 30px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-}
-
-.video-button {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1;
-      flex: 1;
-  -ms-flex-direction: row;
-      flex-direction: row;
-}
-
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -240,30 +240,6 @@ nav a:hover {
 .services .title-section {
   margin-top: 100px;
   margin-bottom: 0;
-}
-
-.circle-services {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 100px;
-}
-
-.circle img {
-  item: center;
-  display: -ms-flexbox;
-  display: flex;
-  transition: 0.6s;
-}
-
-.circle img:hover {
-  transform: scale(1.1);
-}
-
-.circle-title {
-  color: #ed145b;
-  margin-top: 15px;
 }
 
 .pink-line-title {
@@ -281,6 +257,30 @@ nav a:hover {
   border: 1px solid #ed145b;
   width: 200px;
   margin: 38px auto;
+}
+
+.circle-services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+.circle-services img {
+  item: center;
+  display: -ms-flexbox;
+  display: flex;
+  transition: 0.6s;
+}
+
+.circle-services img:hover {
+  transform: scale(1.1);
+}
+
+.circle-services .circle-title {
+  color: #ed145b;
+  margin-top: 15px;
 }
 
 .slide {
@@ -554,13 +554,19 @@ nav a:hover {
   line-height: 0;
 }
 
-.gallery .describtion {
+.gallery .description {
   background-color: #f4f4f4;
   padding: 20px;
 }
 
-.gallery .describtion p {
+.gallery .description p {
   font: 300 15px/30px Lato;
+}
+
+.description h4 {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .photo:last-of-type {
@@ -689,7 +695,7 @@ footer {
   color: white;
   width: 100%;
   padding: 25px;
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .psd-template .button-pink:hover {
