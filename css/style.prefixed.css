@@ -92,7 +92,7 @@
 }
 
 .hero .btn-flex .btn:hover {
-  background-color: #FFF;
+  background-color: transparent;
   border: 1px solid #ed145b;
   color: #ed145b;
 }
@@ -581,6 +581,19 @@
   color: #5a5a5a;
 }
 
+.search-ico {
+  background: url("../images/search-icon.png");
+  height: 45px;
+  width: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity .8s ease;
+  z-index: 2;
+}
+
 .image > img {
   position: absolute;
   left: 50%;
@@ -598,7 +611,7 @@
   left: -20%;
   top: 0;
   margin-top: 245px;
-  transition: 1s ease-in;
+  transition: 0.8s ease-in;
   position: absolute;
   z-index: 1;
 }
@@ -613,14 +626,61 @@
   background-color: rgba(237, 20, 91, 0.8);
 }
 
-.arrow {
+.center-arrow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: none;
+}
+
+.center-arrow img {
+  width: 15px;
+  height: 15px;
+  margin-top: 40px;
+}
+
+.downArrow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 70px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.downArrow button {
+  border: none;
+  cursor: pointer;
+}
+
+.downArrow p {
   text-align: center;
   color: #ed145b;
   text-transform: uppercase;
   font-family: "Lato";
   font-weight: bold;
-  margin-top: 100px;
-  margin-bottom: 65px;
+}
+
+.bounce {
+  animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .psd-template {
@@ -633,6 +693,7 @@
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  margin-top: 50px;
 }
 
 .psd-template .flex-center {
@@ -644,6 +705,12 @@
 
 .psd-template .flex-center button {
   margin: 30px auto 0 auto;
+}
+
+.psd-template .flex-center button:hover {
+  background-color: transparent;
+  border: 1px solid #ed145b;
+  color: #ed145b;
 }
 
 .psd-template .flex-center p {
