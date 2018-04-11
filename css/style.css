@@ -34,7 +34,7 @@ header ul {
   color: black;
   list-style-type: none;
   flex-direction: row;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 
 header ul li {
@@ -44,7 +44,7 @@ header ul li {
 }
 
 header img {
-  padding-top: 10px;
+  padding-top: 40px;
   position: absolute;
 }
 
@@ -52,6 +52,9 @@ header a {
   text-decoration: none;
   color: white;
   transition: 0.7s;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: bold;
 }
 
 header a:hover {
@@ -792,29 +795,23 @@ footer {
   flex-wrap: wrap;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 10px;
+  }
   .pink-bar {
-    background-image: none;
+    display: none;
   }
   .psd-ad-height {
-    height: 480px;
-    justify-content: center;
-    display: flex;
-    padding-top: 0;
-    background-color: #f4f4f4;
+    height: 520px;
   }
   .psd-ad-height .psd-ad {
-    height: 480px;
+    height: 500px;
   }
   .row {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .row .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .row .column .title-section1 {
     font-size: 38px;
@@ -831,7 +828,7 @@ footer {
     margin: 0;
     float: right;
     display: flex;
-    margin: 20px auto;
+    margin: 15px auto;
   }
   .row .column .play-button .text-button {
     margin: 1px;
@@ -854,6 +851,9 @@ footer {
     width: 200px;
     margin: 38px auto;
   }
+  .services .title-section {
+    margin-top: 60px;
+  }
   .community-bar .community-text {
     display: flex;
     flex-direction: column;
@@ -874,34 +874,7 @@ footer {
     padding: 0;
   }
   .psd-template {
-    background-image: url("../images/background3.png");
-    background-size: cover;
-    position: relative;
-    width: 100%;
     height: 500px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    background-position: center;
-  }
-  .psd-template .flex-center {
-    display: flex;
-    flex-direction: column;
-  }
-  .psd-template .flex-center button {
-    margin: 30px auto 0 auto;
-  }
-  .psd-template .flex-center button:hover {
-    background-color: transparent;
-    border: 1px solid #ed145b;
-    color: #ed145b;
-  }
-  .psd-template .flex-center p {
-    color: #FFF;
-  }
-  .psd-template .flex-center h1 {
-    color: #FFF;
   }
   .download-section img {
     display: none;
@@ -919,314 +892,66 @@ footer {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
+  header {
+    display: flex;
+  }
+  header img {
+    margin: 0 auto;
+    padding: 10px 0 0 10px;
+  }
   header ul {
     display: none;
     position: absolute;
     right: 50%;
     transform: translateX(50%);
+    width: 100%;
+    background-color: black;
   }
   header ul li {
     display: block;
     text-align: center;
     line-height: 25px;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #ed145b;
   }
   header .mobile-menu {
     display: block;
-  }
-  .pink-bar {
-    background-image: none;
-  }
-  .services .title-section {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  .psd-ad-height {
-    height: 500px;
-    justify-content: center;
-    display: flex;
-    padding-top: 0;
-    background-color: #f4f4f4;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .row .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-  .row .column .title-section1 {
-    font-size: 38px;
-    font-family: "Lato";
-    color: #5a5a5a;
-    font-style: italic;
-    line-height: 1.368;
-    text-align: center;
-  }
-  .row .column .p-flex p {
-    text-align: center;
-  }
-  .row .column .play-button {
-    margin: 0;
-    float: right;
-    display: flex;
-    margin: 20px auto 0 auto;
-  }
-  .row .mac img {
-    display: none;
-  }
-  .pink-line1 {
-    font-size: 15px;
-    font-family: "Lato";
-    color: #5a5a5a;
-    line-height: 2;
-    text-align: center;
-    margin: 0;
-  }
-  .pink-line1:before {
-    content: "";
-    display: block;
-    border: 1px solid #ed145b;
-    width: 200px;
-    margin: 25px auto;
+    padding: 10px 10px 0 0;
   }
   .circle-services {
-    margin-left: 20%;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    display: flex;
   }
   .circle-services .circle {
-    margin: 0 auto;
-    width: 50%;
-    padding: 10px;
-  }
-  .slide {
-    display: none;
-  }
-  .icon {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon .community-bar .community-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon .community-bar .community-text h1 {
-    font: 300 30px Lato;
-    text-transform: uppercase;
-  }
-  .icon .community-bar .community-text h1 span {
-    font-weight: 900;
-  }
-  .icon .community-bar .community-text button {
-    margin-top: 10px;
-  }
-  .icon .gallery .row3 .photo {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .icon .gallery .row3 .photo .image::before {
-    display: none;
-  }
-  .icon .psd-template {
-    background-image: url("../images/background3.png");
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    background-position: center;
-  }
-  .icon .psd-template .flex-center {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon .psd-template .flex-center button {
-    margin: 30px auto 0 auto;
-  }
-  .icon .psd-template .flex-center button:hover {
-    background-color: transparent;
-    border: 1px solid #ed145b;
-    color: #ed145b;
-  }
-  .icon .psd-template .flex-center p {
-    color: #FFF;
-  }
-  .icon .psd-template .flex-center h1 {
-    color: #FFF;
-  }
-  .icon .download-section img {
-    display: none;
-  }
-  .icon .download-section .download-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .icon .download-section .download-text h1 {
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
+    width: 50%;
   }
-  .icon .download-section .download-text button {
-    margin: 30px auto;
+  .circle-services .circle img {
+    object-fit: contain;
   }
 }
 
-@media (max-width: 767px) {
-  .gallery .row3 .photo {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+@media (max-width: 991px) and (max-width: 640px) {
+  .mache {
+    padding-top: 100px;
   }
-  .pink-bar {
-    background-image: none;
-  }
-  .services .title-section {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  .psd-ad-height {
-    height: 500px;
-    justify-content: center;
-    display: flex;
-    padding-top: 0;
-    background-color: #f4f4f4;
-  }
-  .row {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .row .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-  .row .column .title-section1 {
-    font-size: 38px;
-    font-family: "Lato";
-    color: #5a5a5a;
-    font-style: italic;
-    line-height: 1.368;
+  .mache h1 {
     text-align: center;
-  }
-  .row .column .p-flex p {
-    text-align: center;
-  }
-  .row .column .play-button {
-    margin: 0;
-    float: right;
-    display: flex;
-    margin: 20px auto 0 auto;
-  }
-  .row .mac img {
-    display: none;
-  }
-  .pink-line1 {
-    font-size: 15px;
-    font-family: "Lato";
-    color: #5a5a5a;
-    line-height: 2;
-    text-align: center;
-    margin: 0;
-  }
-  .pink-line1:before {
-    content: "";
-    display: block;
-    border: 1px solid #ed145b;
-    width: 200px;
-    margin: 25px auto;
-  }
-  .circle-services {
-    margin-left: 20%;
-    margin-top: 20px;
-    margin-bottom: 40px;
   }
   .circle-services .circle {
-    margin: 0 auto;
-    width: 50%;
-    padding: 10px;
-  }
-  .slide {
-    display: none;
-  }
-  .icon {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon .community-bar .community-text {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon .community-bar .community-text h1 {
-    font: 300 30px Lato;
-    text-transform: uppercase;
-  }
-  .icon .community-bar .community-text h1 span {
-    font-weight: 900;
-  }
-  .icon .community-bar .community-text button {
-    margin-top: 10px;
-  }
-  .icon .gallery .row3 .photo {
     width: 100%;
-    margin: 0;
-    padding: 0;
   }
-  .icon .gallery .row3 .photo .image::before {
-    display: none;
+  .slide p {
+    text-align: justify;
   }
-  .icon .psd-template {
-    background-image: url("../images/background3.png");
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    background-position: center;
-  }
-  .icon .psd-template .flex-center {
-    display: flex;
-    flex-direction: column;
-  }
-  .icon .psd-template .flex-center button {
-    margin: 30px auto 0 auto;
-  }
-  .icon .psd-template .flex-center button:hover {
-    background-color: transparent;
-    border: 1px solid #ed145b;
-    color: #ed145b;
-  }
-  .icon .psd-template .flex-center p {
-    color: #FFF;
-  }
-  .icon .psd-template .flex-center h1 {
-    color: #FFF;
-  }
-  .icon .download-section img {
-    display: none;
-  }
-  .icon .download-section .download-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .icon .download-section .download-text h1 {
+  .community-bar h1 {
     text-align: center;
-  }
-  .icon .download-section .download-text button {
-    margin: 30px auto;
   }
 }
 
