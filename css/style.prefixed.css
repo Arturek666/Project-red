@@ -816,6 +816,57 @@ footer {
       flex-wrap: wrap;
 }
 
+.scrolltop {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.scroll {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #b2b2b2;
+  background: #ed145b;
+  padding: 20px;
+  text-align: center;
+  margin: 0 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.scroll:hover {
+  background: #b2b2b2;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.scroll:hover .fa {
+  padding-top: -10px;
+}
+
+.scroll .fa {
+  font-size: 30px;
+  margin-top: -5px;
+  margin-left: 1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.fa-angle-up {
+  font-size: 30px;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 10px;
@@ -979,11 +1030,23 @@ footer {
   .mache h1 {
     text-align: center;
   }
+  .row2:first-child {
+    padding-top: 0;
+  }
+  .row2:last-child {
+    padding-bottom: 50px;
+  }
   .circle-services .circle {
     width: 100%;
   }
+  .prices-section .title-section {
+    padding-top: 50px;
+  }
   .mobile-width .price-box {
     width: 100%;
+  }
+  .prices-box .row1 {
+    padding-bottom: 60px;
   }
   .slide p {
     text-align: justify;
