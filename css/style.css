@@ -236,6 +236,7 @@ header #mobile-menu:checked + ul {
   color: #5a5a5a;
   line-height: 2;
   margin: 38px auto;
+  width: 500px;
 }
 
 .pink-line1:before {
@@ -583,7 +584,7 @@ header #mobile-menu:checked + ul {
   color: #5a5a5a;
 }
 
-.search-ico {
+.gallery .row3 .search-ico {
   background: url("../images/search-icon.png");
   height: 45px;
   width: 45px;
@@ -596,13 +597,13 @@ header #mobile-menu:checked + ul {
   z-index: 2;
 }
 
-.image > img {
+.gallery .row3 .image > img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.image::before {
+.gallery .row3 .image::before {
   content: "";
   background-color: #ed145b;
   width: 200%;
@@ -618,12 +619,12 @@ header #mobile-menu:checked + ul {
   z-index: 1;
 }
 
-.photo:hover .search-ico {
+.gallery .row3 .photo:hover .search-ico {
   transition-delay: .4s;
   opacity: 1;
 }
 
-.photo:hover .image::before {
+.gallery .row3 .photo:hover .image::before {
   margin-top: -20px;
   background-color: rgba(237, 20, 91, 0.8);
 }
@@ -833,7 +834,7 @@ footer {
   .row .column .play-button .text-button {
     margin: 1px;
   }
-  .row .mac img {
+  .mac img {
     display: none;
   }
   .pink-line1 {
@@ -867,11 +868,6 @@ footer {
   }
   .community-bar .community-text button {
     margin-top: 10px;
-  }
-  .gallery .row3 .photo {
-    width: 50%;
-    margin: 0;
-    padding: 0;
   }
   .psd-template {
     height: 500px;
@@ -929,15 +925,19 @@ footer {
     justify-content: center;
     margin: 0 auto;
     padding: 20px;
+    margin: 0;
     text-align: center;
     width: 50%;
   }
   .circle-services .circle img {
     object-fit: contain;
   }
+  .row3 .photo {
+    width: 50%;
+  }
 }
 
-@media (max-width: 991px) and (max-width: 640px) {
+@media (max-width: 640px) {
   .mache {
     padding-top: 100px;
   }
@@ -947,11 +947,17 @@ footer {
   .circle-services .circle {
     width: 100%;
   }
+  .mobile-width .price-box {
+    width: 100%;
+  }
   .slide p {
     text-align: justify;
   }
   .community-bar h1 {
     text-align: center;
+  }
+  .gallery .photo {
+    width: 100%;
   }
 }
 
