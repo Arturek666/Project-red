@@ -831,6 +831,7 @@ footer {
 
 .scroll:hover .fa {
   padding-top: -10px;
+  color: #ed145b;
 }
 
 .scroll .fa {
