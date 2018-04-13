@@ -921,6 +921,14 @@ footer {
   .community-bar .community-text button {
     margin-top: 10px;
   }
+  .gallery .row3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery .row3 .photo {
+    width: 360px;
+  }
   .psd-template {
     height: 500px;
   }
@@ -984,8 +992,12 @@ footer {
   .circle-services .circle img {
     object-fit: contain;
   }
-  .row3 .photo {
-    width: 50%;
+  .prices-section .prices-box .row1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prices-section .prices-box .row1 .price-box {
+    margin: 0 38px 0 38px;
   }
 }
 
@@ -1008,8 +1020,12 @@ footer {
   .prices-section .title-section {
     padding-top: 50px;
   }
-  .mobile-width .price-box {
-    width: 100%;
+  .prices-section .prices-box .row1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prices-section .prices-box .row1 .price-box {
+    margin: 0 30px 0 30px;
   }
   .prices-box .row1 {
     padding-bottom: 60px;
@@ -1019,9 +1035,6 @@ footer {
   }
   .community-bar h1 {
     text-align: center;
-  }
-  .gallery .photo {
-    width: 100%;
   }
 }
 
