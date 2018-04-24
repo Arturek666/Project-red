@@ -110,7 +110,8 @@ header #mobile-menu:checked + ul {
 .btn-flex .btn {
   border-radius: 24px;
   background-color: #ed145b;
-  padding: 15px 60px;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
   text-transform: uppercase;
   font-size: 15px;
@@ -129,12 +130,17 @@ header #mobile-menu:checked + ul {
 }
 
 .pink-bar {
-  background-image: url("../images/Pink-bar.png");
-  width: 100vw;
+  padding-bottom: 50px;
   height: 78px;
-  line-height: 0;
+}
+
+.pink-bar:before {
+  background-image: url("../images/Pink-bar.png");
   background-repeat: no-repeat;
-  background-color: #f4f4f4;
+  background-color: transparent;
+  background-size: contain;
+  background-position: center;
+  content: "";
 }
 
 .pink-line {
@@ -160,7 +166,6 @@ header #mobile-menu:checked + ul {
       justify-content: center;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 50px;
   background-color: #f4f4f4;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -198,11 +203,6 @@ header #mobile-menu:checked + ul {
 .row .column .play-button {
   margin: 0;
   float: right;
-}
-
-.row .column .play-button:hover {
-  padding: 5px;
-  transition: 0.6s;
 }
 
 .row .column .play-button .video-button {
@@ -446,10 +446,16 @@ header #mobile-menu:checked + ul {
   list-style-type: none;
 }
 
+.price-box:hover .grey-box {
+  background-color: #ed145b;
+  transition: 0.6s;
+}
+
 .button-pink {
   border-radius: 24px;
   background-color: #ed145b;
-  padding: 15px 60px;
+  height: 50px;
+  width: 200px;
   font-size: 15px;
   font-family: "Lato";
   color: #f4f4f4;
@@ -458,7 +464,8 @@ header #mobile-menu:checked + ul {
   text-transform: uppercase;
   margin-top: 20px;
   transition: 0.6s;
-  border: 0;
+  border: none;
+  cursor: pointer;
 }
 
 .button-pink:hover {
@@ -493,23 +500,23 @@ header #mobile-menu:checked + ul {
   display: flex;
 }
 
-.icons-section .feature {
+.icons-section figure {
   display: -ms-flexbox;
   display: flex;
   margin: 20px 10px;
 }
 
-.icons-section .feature img {
+.icons-section figure img {
   width: 55px;
   height: 55px;
   margin-top: 23px;
 }
 
-.icons-section .feature .title-feature {
+.icons-section figure figcaption {
   padding: 0 10px 0 10px;
 }
 
-.icons-section .feature .title-feature h1 {
+.icons-section figure figcaption h2 {
   font-size: 15px;
   font-family: "Lato";
   color: #ed145b;
@@ -518,7 +525,7 @@ header #mobile-menu:checked + ul {
   text-align: left;
 }
 
-.icons-section .feature .title-feature p {
+.icons-section figure figcaption p {
   font-size: 15px;
   font-family: "Lato";
   color: #5a5a5a;
@@ -549,12 +556,12 @@ header #mobile-menu:checked + ul {
   color: #FFF;
 }
 
-.community-bar .community-text h1 {
+.community-bar .community-text h2 {
   font: 300 46px Lato;
   text-transform: uppercase;
 }
 
-.community-bar .community-text h1 span {
+.community-bar .community-text h2 span {
   font-weight: 900;
 }
 
@@ -596,16 +603,16 @@ header #mobile-menu:checked + ul {
       flex-wrap: wrap;
 }
 
-.gallery .row3 .photo {
+.gallery .row3 figure {
   padding: 30px 20px 0 20px;
   width: 33.33337%;
 }
 
-.gallery .row3 .photo:last-of-type {
+.gallery .row3 figure:last-of-type {
   margin-right: 0;
 }
 
-.gallery .row3 .photo .image {
+.gallery .row3 figure .image {
   line-height: 0;
   position: relative;
   overflow: hidden;
@@ -613,24 +620,25 @@ header #mobile-menu:checked + ul {
   cursor: pointer;
 }
 
-.gallery .row3 .photo .description {
+.gallery .row3 figure figcaption {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding-top: 20px;
 }
 
-.gallery .row3 .photo .description p {
+.gallery .row3 figure figcaption h4 {
   font-size: 15px;
   font-family: "Lato";
   font-weight: 300;
-}
-
-.gallery .row3 .photo .description h4 {
-  font-size: 15px;
-  font-family: "Lato";
-  font-weight: 300;
-  padding-bottom: 15px;
   text-transform: uppercase;
   color: #5a5a5a;
+  padding: 0 10px;
+}
+
+.gallery .row3 figure figcaption p {
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: 300;
+  padding: 10px;
 }
 
 .gallery .row3 .search-ico {
@@ -668,12 +676,12 @@ header #mobile-menu:checked + ul {
   z-index: 1;
 }
 
-.gallery .row3 .photo:hover .search-ico {
+.gallery .row3 figure:hover .search-ico {
   transition-delay: .4s;
   opacity: 1;
 }
 
-.gallery .row3 .photo:hover .image::before {
+.gallery .row3 figure:hover .image::before {
   margin-top: -20px;
   background-color: rgba(237, 20, 91, 0.8);
 }
@@ -683,13 +691,15 @@ header #mobile-menu:checked + ul {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  background: none;
 }
 
 .center-arrow img {
-  width: 15px;
-  height: 15px;
-  margin-top: 40px;
+  margin-top: 20px;
+  transition: 0.6s;
+}
+
+.center-arrow img:hover {
+  transform: scale(1.1);
 }
 
 .downArrow {
@@ -700,10 +710,6 @@ header #mobile-menu:checked + ul {
   margin-top: 70px;
   -ms-flex-direction: column;
       flex-direction: column;
-}
-
-.downArrow button {
-  border: none;
   cursor: pointer;
 }
 
@@ -713,26 +719,11 @@ header #mobile-menu:checked + ul {
   text-transform: uppercase;
   font-family: "Lato";
   font-weight: bold;
+  transition: 0.6s;
 }
 
-.bounce {
-  animation: bounce 3s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
+.downArrow p:hover {
+  font-size: 18px;
 }
 
 .psd-template {
@@ -772,7 +763,7 @@ header #mobile-menu:checked + ul {
   color: #FFF;
 }
 
-.psd-template .flex-center h1 {
+.psd-template .flex-center h2 {
   color: #FFF;
 }
 
@@ -794,19 +785,15 @@ header #mobile-menu:checked + ul {
   margin-right: 50px;
 }
 
-.download-section .download-text h1 {
+.download-section .download-text h2 {
   text-align: left;
 }
 
 footer {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 1;
-      flex: 1;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   background-color: #2b2b2b;
   color: white;
   width: 100%;
@@ -814,6 +801,9 @@ footer {
   margin-top: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-image: url("../images/madeby.png");
+  background-position: 80%;
+  background-repeat: no-repeat;
 }
 
 .scrolltop {
@@ -825,7 +815,7 @@ footer {
   right: 10px;
 }
 
-.scroll {
+.scrolltop .scroll {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -841,20 +831,21 @@ footer {
   -o-transition: 0.5s;
 }
 
-.scroll:hover {
-  background: #b2b2b2;
+.scrolltop .scroll:hover {
+  background: #FFF;
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
+  border: 1px solid #ed145b;
 }
 
-.scroll:hover .fa {
+.scrolltop .scroll:hover .fa {
   padding-top: -10px;
   color: #ed145b;
 }
 
-.scroll .fa {
+.scrolltop .scroll .fa {
   font-size: 30px;
   margin-top: -5px;
   margin-left: 1px;
@@ -864,8 +855,15 @@ footer {
   -o-transition: 0.5s;
 }
 
-.fa-angle-up {
+.scrolltop .fa-angle-up {
   font-size: 30px;
+}
+
+@media (max-width: 1550px) {
+  .psd-ad .row .mac img {
+    width: 637px;
+    height: 433px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -937,11 +935,11 @@ footer {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .community-bar .community-text h1 {
+  .community-bar .community-text h2 {
     font: 300 36px Lato;
     text-transform: uppercase;
   }
-  .community-bar .community-text h1 span {
+  .community-bar .community-text h2 span {
     font-weight: 900;
   }
   .community-bar .community-text button {
@@ -972,7 +970,7 @@ footer {
     -ms-flex-pack: center;
         justify-content: center;
   }
-  .download-section .download-text h1 {
+  .download-section .download-text h2 {
     text-align: center;
   }
   .download-section .download-text button {
@@ -1045,7 +1043,7 @@ footer {
   .mache {
     padding-top: 100px;
   }
-  .mache h1 {
+  .mache h2 {
     text-align: center;
   }
   .row2:first-child {

@@ -138,14 +138,16 @@
 
         .pink-bar {
             padding-bottom: 50px;
-            width: 100vw;
             height: 78px;
         }
 
         .pink-bar:before {
-            content: url("../images/Pink-bar.png");
+            background-image: url("../images/Pink-bar.png");
             background-repeat: no-repeat;
             background-color: transparent;
+            background-size: contain;
+            background-position: center;
+            content: "";
         }
 
         .pink-line {
