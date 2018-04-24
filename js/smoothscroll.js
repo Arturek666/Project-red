@@ -46,6 +46,19 @@ $(function() { $(".scroll").click(function() { $("html,body").animate({ scrollTo
 
 
 //show more- slow slowly
-$(".showslow").click(function() {
-    $("#myDIV").toggle('slow');
+
+
+$(function() {
+    $('.scroll').click(function() {
+        $('html,body').animate({ scrollTop: $('#home').offset().top }, '1000');
+        return false;
+    });
+
+    var $myContainer = $('#myDIV')
+
+    $myContainer.hide();
+
+    $('.showslow').click(function() {
+        $myContainer.toggle('slow');
+    });
 });
