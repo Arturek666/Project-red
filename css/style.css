@@ -973,6 +973,10 @@ footer p {
   .psd-ad-height .psd-ad {
     height: 800px;
   }
+  .circle-services {
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
   .circle-services .circle {
     width: 100%;
   }
@@ -980,8 +984,10 @@ footer p {
     padding-top: 50px;
   }
   .prices-section .prices-box .row1 {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 70px;
   }
   .prices-section .prices-box .row1 .price-box {
     margin: 0 30px 0 30px;
@@ -991,6 +997,9 @@ footer p {
   }
   .slide p {
     text-align: justify;
+  }
+  .community-bar {
+    margin-bottom: 60px;
   }
   .community-bar .community-text h2 {
     text-align: center;
