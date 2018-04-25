@@ -673,13 +673,6 @@ figure:hover .image::before {
     0.8);
 }
 
-
-
-
-
-
-
-
 .center-arrow {
     display: flex;
     justify-content: center;
@@ -750,13 +743,15 @@ figure:hover .image::before {
 //Start Download Section
 .download-section {
     display: flex;
-    flex: 1;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     flex-wrap: wrap;
     img {
-        margin-right: 50px;
+        width: 600px;
+        height: 500px;
+        margin-right: 40px;
     }
 
     .download-text {
@@ -1082,6 +1077,11 @@ footer {
 
         padding-bottom: 50px;
     }
+    .psd-ad-height {
+        .psd-ad {
+            height: 800px;
+        }
+    }
 
     .circle-services {
         .circle {
@@ -1128,5 +1128,20 @@ footer {
         p {
             padding-bottom: 10px;
         }
+    }
+}
+
+@media(max-width: 420px) {
+    .psd-ad-height {
+        .psd-ad {
+            height: 800px;
+        }
+    }
+
+    .slide {
+        display: none;
+    }
+    .psd-template {
+        height: 750px;
     }
 }

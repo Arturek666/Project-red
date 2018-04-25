@@ -706,7 +706,7 @@ figure:hover .image::before {
 
 .download-section {
   display: flex;
-  flex: 1;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
@@ -714,7 +714,9 @@ figure:hover .image::before {
 }
 
 .download-section img {
-  margin-right: 50px;
+  width: 600px;
+  height: 500px;
+  margin-right: 40px;
 }
 
 .download-section .download-text h2 {
@@ -968,6 +970,9 @@ footer p {
   .row2:last-child {
     padding-bottom: 50px;
   }
+  .psd-ad-height .psd-ad {
+    height: 800px;
+  }
   .circle-services .circle {
     width: 100%;
   }
@@ -996,6 +1001,18 @@ footer p {
   }
   footer p {
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .psd-ad-height .psd-ad {
+    height: 800px;
+  }
+  .slide {
+    display: none;
+  }
+  .psd-template {
+    height: 750px;
   }
 }
 

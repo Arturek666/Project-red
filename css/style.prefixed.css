@@ -766,8 +766,8 @@ figure:hover .image::before {
 .download-section {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex: 1;
-      flex: 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -778,7 +778,9 @@ figure:hover .image::before {
 }
 
 .download-section img {
-  margin-right: 50px;
+  width: 600px;
+  height: 500px;
+  margin-right: 40px;
 }
 
 .download-section .download-text h2 {
@@ -1056,6 +1058,9 @@ footer p {
   .row2:last-child {
     padding-bottom: 50px;
   }
+  .psd-ad-height .psd-ad {
+    height: 800px;
+  }
   .circle-services .circle {
     width: 100%;
   }
@@ -1087,6 +1092,18 @@ footer p {
   }
   footer p {
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .psd-ad-height .psd-ad {
+    height: 800px;
+  }
+  .slide {
+    display: none;
+  }
+  .psd-template {
+    height: 750px;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
