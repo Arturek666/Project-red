@@ -82,8 +82,6 @@ header {
 
     #mobile-menu {
         display: none;
-
-
         &:checked+ul {
             display: block;
         }
@@ -124,6 +122,7 @@ header {
         text-align: center;
         border: none;
         transition: 1s;
+        outline: none;
 
         &:hover {
             background-color: transparent;
@@ -342,6 +341,7 @@ header {
         font-style: italic;
         line-height: 1.6;
         text-align: center;
+        margin: 15px
     }
 } //Finish Slider Section
 //Start Prices Section
@@ -463,6 +463,8 @@ header {
     transition: 0.6s;
     border: none;
     cursor: pointer;
+    outline: none;
+
     &:hover {
         background-color: $whiteColor;
         border: 1px solid $pinkColor;
@@ -562,6 +564,7 @@ header {
             border: 0;
             margin-left: 20px;
             transition: 1s;
+            outline: none;
 
             &:hover {
                 background-color: $pinkColor;
@@ -1008,7 +1011,8 @@ footer {
                 line-height: 25px;
                 padding: 10px;
                 padding-bottom: 5px;
-                border-bottom: 1px dotted $pinkColor;
+                border-bottom: 1px solid $pinkColor;
+                margin: 0 auto;
             }
         }
 
@@ -1098,6 +1102,10 @@ footer {
     }
 
     .prices-section {
+        p {
+            width: 75%;
+            margin: 0 auto;
+        }
 
         .prices-box {
 
@@ -1120,9 +1128,7 @@ footer {
         }
     } //Slide SEction
     .slide {
-        p {
-            text-align: justify;
-        }
+        display: none;
     } //Community Section
     .community-bar {
         margin-bottom: 60px;
@@ -1133,6 +1139,20 @@ footer {
             }
         }
     }
+    .gallery {
+        p {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+    .psd-template {
+        height: 650px;
+        p {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
     footer {
         flex-direction: column;
         p {
@@ -1146,6 +1166,12 @@ footer {
         height: 700px;
         .psd-ad {
             height: 600px;
+            .p-flex {
+                p {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 
@@ -1154,5 +1180,14 @@ footer {
     }
     .psd-template {
         height: 750px;
+    }
+    .download-section {
+
+        .download-text {
+            p {
+                width: 65%;
+                margin: 0 auto;
+            }
+        }
     }
 }
