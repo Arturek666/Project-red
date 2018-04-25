@@ -249,7 +249,7 @@ header #mobile-menu:checked + ul {
   color: #5a5a5a;
   line-height: 2;
   margin: 38px auto;
-  width: 500px;
+  width: 100%;
 }
 
 .pink-line1:before {
@@ -872,9 +872,6 @@ footer p {
   .container {
     padding: 0 10px;
   }
-  .pink-bar {
-    display: none;
-  }
   .psd-ad-height {
     height: 520px;
   }
@@ -1052,6 +1049,9 @@ footer p {
   .mache h1 {
     text-align: center;
   }
+  .pink-bar {
+    display: none;
+  }
   .row2:first-child {
     padding-top: 0;
   }
@@ -1105,8 +1105,11 @@ footer p {
 }
 
 @media (max-width: 420px) {
+  .psd-ad-height {
+    height: 700px;
+  }
   .psd-ad-height .psd-ad {
-    height: 800px;
+    height: 600px;
   }
   .slide {
     display: none;

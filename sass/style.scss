@@ -252,7 +252,7 @@ header {
     color: $greyTitle;
     line-height: 2;
     margin: 38px auto;
-    width: 500px;
+    width: 100%;
 }
 
 .pink-line1:before {
@@ -845,9 +845,7 @@ footer {
     .container {
         padding: 0 10px;
     } //Finish Hero Section
-    .pink-bar {
-        display: none;
-    } //Start About Section 
+    //Start About Section 
     .psd-ad-height {
         height: 520px;
         .psd-ad {
@@ -1065,6 +1063,9 @@ footer {
         h1 {
             text-align: center;
         }
+    }
+    .pink-bar {
+        display: none;
     } //Start Icons Section
     .row2:first-child {
 
@@ -1141,8 +1142,9 @@ footer {
 
 @media(max-width: 420px) {
     .psd-ad-height {
+        height: 700px;
         .psd-ad {
-            height: 800px;
+            height: 600px;
         }
     }
 
