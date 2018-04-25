@@ -996,7 +996,7 @@ footer p {
     right: 50%;
     transform: translateX(50%);
     width: 100%;
-    background-color: black;
+    background-color: white;
   }
   header ul li {
     display: block;
@@ -1004,8 +1004,12 @@ footer p {
     line-height: 25px;
     padding: 10px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #ed145b;
+    border-bottom: 2px solid #ed145b;
     margin: 0 auto;
+  }
+  header ul li a {
+    color: #ed145b;
+    font-size: 18px;
   }
   header .mobile-menu {
     display: block;
@@ -1063,9 +1067,6 @@ footer p {
   .row2:last-child {
     padding-bottom: 50px;
   }
-  .psd-ad-height .psd-ad {
-    height: 800px;
-  }
   .circle-services {
     margin-top: 10px;
     padding-bottom: 50px;
@@ -1104,8 +1105,8 @@ footer p {
     text-align: center;
     font-size: 30px;
   }
-  .gallery p {
-    width: 75%;
+  .gallery .pink-line-title {
+    width: 70%;
     margin: 0 auto;
   }
   .psd-template {
@@ -1126,13 +1127,10 @@ footer p {
 
 @media (max-width: 420px) {
   .psd-ad-height {
-    height: 700px;
-  }
-  .psd-ad-height .psd-ad {
-    height: 600px;
+    height: 750px;
   }
   .psd-ad-height .psd-ad .p-flex p {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   .slide {

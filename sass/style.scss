@@ -991,8 +991,6 @@ footer {
         display: flex;
 
         img {
-
-
             margin: 0 auto;
             padding: 10px 0 0 10px;
         }
@@ -1003,7 +1001,7 @@ footer {
             right: 50%;
             transform: translateX(+50%);
             width: 100%;
-            background-color: black;
+            background-color: white;
 
             li {
                 display: block;
@@ -1011,8 +1009,12 @@ footer {
                 line-height: 25px;
                 padding: 10px;
                 padding-bottom: 5px;
-                border-bottom: 1px solid $pinkColor;
+                border-bottom: 2px solid $pinkColor;
                 margin: 0 auto;
+                a {
+                    color: $pinkColor;
+                    font-size: 18px;
+                }
             }
         }
 
@@ -1084,9 +1086,8 @@ footer {
         padding-bottom: 50px;
     }
     .psd-ad-height {
-        .psd-ad {
-            height: 800px;
-        }
+
+        .psd-ad {}
     }
 
     .circle-services {
@@ -1140,11 +1141,12 @@ footer {
         }
     }
     .gallery {
-        p {
-            width: 75%;
+        .pink-line-title {
+            width: 70%;
             margin: 0 auto;
         }
     }
+
     .psd-template {
         height: 650px;
         p {
@@ -1163,12 +1165,12 @@ footer {
 
 @media(max-width: 420px) {
     .psd-ad-height {
-        height: 700px;
+        height: 750px;
         .psd-ad {
-            height: 600px;
+
             .p-flex {
                 p {
-                    width: 60%;
+                    width: 80%;
                     margin: 0 auto;
                 }
             }
